@@ -3,7 +3,12 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+h1 {
+    padding: auto; text-align: center;
+}
+p {
+    padding: auto; text-align:center
+}
 /* Navbar Styles */
 .navbar {
     display: flex;
