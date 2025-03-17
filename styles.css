@@ -116,8 +116,25 @@ ul li {
 
 /* Footer */
 footer {
-    background: #0c8718b2;
+    background: #004225;
     color: white;
     padding: 10px;
     margin-top: 20px;
+}
+.text-image-container {
+    display: flex;
+    align-items: center; /* Aligns text and image vertically */
+    gap: 20px; /* Adds space between text and image */
+}
+
+.side-image {
+    width: 200px; /* Adjust size */
+    height: auto;
+    border-radius: 5px; /* Optional styling */
+}
+.side-image {
+    float: left;
+    margin-right: 15px;
+    width: 350px; /* Adjust as needed */
+    height: auto;
 }
