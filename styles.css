@@ -7,7 +7,7 @@ h1 {
     padding: auto; text-align: center;
 }
 p {
-    padding: auto; text-align:center
+    padding: auto; text-align:center; font-size: larger;
 }
 /* Navbar Styles */
 .navbar {
@@ -86,9 +86,9 @@ body {
 
 /* Header */
 header {
-    background: green;
+    background: #004225;
     color: black;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Sections */
