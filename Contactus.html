@@ -1,53 +1,85 @@
 <!DOCTYPE html>
+<!--Always declare the document type as the first line in your document-->
 <html lang="en">
+    <!--You should always include the lang attribute inside the <html> tag, to declare the language of the Web page.​-->
+    <!--make sure that the HTML and body tags are in your webpage-->
 <head>
     <meta charset="UTF-8">
+    <!--You should include the <meta> element in all your web pages to give the browser instructions on how to control the page's dimensions and scaling.​-->
+    <!--To ensure proper interpretation and correct search engine indexing, the character encoding should be defined as early as possible in an HTML document.​-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Sets the title shown in the browser tab.
+Defines the title displayed when the page is bookmarked.
+Appears as the page title in search engine results.-->
     <title>Contact Us - Treaty 1 Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
+<!--all content is held by the body tag-->
 <body>
     <!-- Header -->
     <header>
+        <!--Heading level 1-->
+        <!--tabindex="1" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
         <h1 tabindex="1">Contact Us</h1>
+        <!--tabindex="2" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
+        <!--paragraph displays content of website-->
         <p tabindex="2">Have questions or want to get involved? Reach out to us below.</p>
     </header>
 
     <!-- Contact Form -->
     <section>
+        <!--The <section> element is used to group related content that logically belongs together, such as chapters, articles, or sections within a document.-->
+        <!--Heading level 2-->
+        <!--tabindex="3" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
         <h2 tabindex="3">Send Us a Message</h2>
+        <!--form tag creates input fields for the user-->
         <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
             <!-- Name Input Field -->
+            <!--label creates a name for the input field-->
+            <!--tabindex="4" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
             <label for="name" tabindex="4">Name:</label>
             <input type="text" id="name" name="name" required>
 
             <!-- Email Input Field -->
+            <!--label creates a title for the input field-->
+            <!--tabindex="5" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
             <label for="email" tabindex="5">Email:</label>
             <input type="email" id="email" name="email" required>
 
             <!-- Message Input Field -->
+            <!--label creates a title for the input field-->
+            <!--tabindex="6" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
             <label for="message" tabindex="6">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 <br/>
             <!-- Submit Button -->
+            <!--tabindex="7" makes it focusable via keyboard navigation, allowing users to tab to the content.-->
             <button type="submit" tabindex="7">Send Message</button>
         </form>
     </section>
 
     <!-- Contact Information -->
     <section>
+        <!--tabindex="8", tabindex="9" tabindex="10" tabindex="11" and tabindex="12" all make it focusable via keyboard navigation, allowing users to tab to the content.-->
         <h2 tabindex="8">Other Ways to Connect</h2>
+        <!--the anchor tag displays an external link for the user to go to-->
         <p tabindex="9">Email: <a href="mailto:your-email@example.com">Treaty 1@gmail.com</a></p>
         <p tabindex="10">Phone: (123) 456-7890</p>
         <p tabindex="11">Follow us on social media:</p>
+        <!--<ul> creates unordered lists-->
         <ul tabindex="12">
+            <!--In HTML, the target attribute, specifies where to open the linked document or submit the form's response.-->
+            <!--<li> lists items-->
+                <!--The anchor tag displays a link for the user to go to-->
             <li><a href="https://facebook.com/yourpage" target="_blank">Facebook</a></li>
             <li><a href="https://twitter.com/yourpage" target="_blank">Twitter</a></li>
             <li><a href="https://instagram.com/yourpage" target="_blank">Instagram</a></li>
         </ul>
     </section>
-    <!-- Footer -->
+    <!-- <Footer> displays copyright as well as additional information-->
+    <!--tabindex="12" all make it focusable via keyboard navigation, allowing users to tab to the content.-->
     <footer tabindex="13">
+        <!--paragraph tag displays content-->
         <p>&copy; 2025 Treaty 1 Website. All rights reserved.</p>
     </footer>
     </body>
