@@ -138,3 +138,11 @@ footer {
     width: 350px; /* Adjust as needed */
     height: auto;
 }
+#about us heading { 
+    border: 20px solid white; /* Adds a black border */
+    padding: 10px; /* Adds space inside the border */
+}
+.highlight {
+    color: red; /* Changes the text color to red */
+    font-weight: bold; /* Makes the text bold */
+}
