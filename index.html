@@ -1,11 +1,26 @@
+<!--Name:  Aayan Amir Hashmi
+
+Course:  Web Dev 10s
+
+Teacher:  Ms. Hoitink
+
+School:  Pembina Trails Collegiate
+
+Date Last Modified: 2025/03/17-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of the website-->
     <title>Treaty 1 - Manitoba</title>
+    <!--This links the external CSS or the styles.css document to the HTML document to make the styles apply to the whole webpage-->
     <link rel="stylesheet" href="styles.css">
+    <!--The <script defer src="script.js"></script> tag loads an external JavaScript file without blocking the HTML parsing.
+    The defer attribute ensures the script runs only after the entire document is loaded, improving page performance.-->
     <script defer src="script.js"></script>
+    <!--The style tag styles HTML elements-->
+    <!--text-align:center; centers the text-->
     <style>
         h3 {
             text-align: center;
@@ -14,19 +29,35 @@
 </head>
 <body>
 <header>
+    <!--Heading level 1-->
+    <!--<h1 tabindex="1" style="color: white;"> is a heading element (<h1>) that
+uses tabindex="1" which makes it focusable via keyboard navigation, allowing users to tab to it. It also
+Uses style="color: white;" which directly sets the text color to white using inline CSS.-->
     <h1 tabindex="1" style="color: white;">Welcome to my Treaty 1 Website</h1>
+    <!--paragraph tag used to display content-->
+    <!--<h1 tabindex="1" style="color: white;"> is a heading element (<h1>) that
+uses tabindex="2" – Makes it focusable via keyboard navigation, allowing users to tab to it. It also
+uses style="color: white;" which directly sets the text color to white using inline CSS.-->
     <p tabindex="2" style="color: white;">Here you can learn about Manitoba Treaty 1 and the promises as well as the commitments that were made in Treaty 1.</p>
     <nav class="navbar">
+                <!--div element used to group multiple elements-->
+            <!--the class attribute is used to group elements together, allowing you to apply consistent styles or behaviors to multiple elements simultaneously.-->
+            <!--<div class="logo"> is a wrapper element used to display a website's logo, which can be an image, text, or both.-->
         <div class="logo">Treaty 1 Manitoba</div>
+        <!--the <ul> tag is used to make unordered lists-->
+            <!--<ul class="nav-links"> is an unordered list (<ul>) used to organize and display navigation links on a website. -->
         <ul class="nav-links">
             <li><a href="aboutus.html" tabindex="3">About us</a></li>
             <li><a href="contactus.html" tabindex="4">Contact us</a></li>
             <li><a href="sources.html" tabindex="5">Resources</a></li>
         </ul>
+        <!--div element used to group multiple elements-->
+            <!--the class attribute is used to group elements together, allowing you to apply consistent styles or behaviors to multiple elements simultaneously.-->
+        <!--<div class="menu-toggle"> is a wrapper element used to create a toggle button for opening and closing a menu, often in mobile navigation. 
+            It is typically styled with CSS and controlled with JavaScript to show or hide a menu when clicked.-->
         <div class="menu-toggle">&#9776;</div>
     </nav>
 </header>
-
     <main>
         <!--Main tag to classify what the main content is-->
         <section class="center-content" tabindex="6">
@@ -35,53 +66,64 @@
             <h1>What are Treaties and why do we use them?</h1>
             <!--Heading level 3 used as a sub-heading-->
             <h3>Before we dive in and take a look at what Treaty 1 is and the promises and agreements made in Treaty 1 Manitoba let's review what Treaties are and their purpose:</h3>
+            <!--div element used to group multiple elements-->
+            <!--the class attribute is used to group elements together, allowing you to apply consistent styles or behaviors to multiple elements simultaneously.-->
+            <!--The class text-image-container is typically used in CSS to style a <div> that contains both text and an image.-->
             <div class="text-image-container">
-    <p>A treaty is a formal agreement between countries or international groups.
+    <p tabindex="7"> A treaty is a formal agreement between countries or international groups.
         It sets out specific rules, responsibilities, or actions they agree to follow.
         We use treaties because treaties help create understanding and cooperation on things like trade, security, the environment, or diplomacy.
     </p>
-    <p>Here is an image of the Map of Manitoba with different highlighted parts representing the different treaties that were signed in Manitoba and the highlighted areas represent which treaties effect different parts of Manitoba:</p>
-    <img src="https://scoinc.mb.ca/wp-content/uploads/2020/10/1-2.png" alt="Treaty 1 Image" class="side-image">
-    <a href="https://scoinc.mb.ca/treaties/">Here is the image source</a>
+    <p tabindex="8">Here is an image of the Map of Manitoba with different highlighted parts representing the different treaties that were signed in Manitoba and the highlighted areas represent which treaties effect different parts of Manitoba:</p>
+    <img src="https://scoinc.mb.ca/wp-content/uploads/2020/10/1-2.png" tabindex="9" alt="Manitoba Treaty map image" class="side-image">
+    <a href="https://scoinc.mb.ca/treaties/" tabindex="10">Here is the image source</a>
 </div>
 
                 <!--Line break tag to create more space between paragraph tag and heading tag-->
             <br/>
             <!--Heading level 1-->
-                <h1>Understanding Treaty 1</h1>
-            <!--Paragraph tag used to display content-->
+                <h1 tabindex="11">Understanding Treaty 1</h1>
+            <!--div element used to group multiple elements-->
+            <!--the class attribute is used to group elements together, allowing you to apply consistent styles or behaviors to multiple elements simultaneously.-->
+            <!--used to hold and style an <iframe>. It helps with layout control, responsiveness, and additional styling like borders, padding, or positioning.-->
             <div class="iframe-container">
-            <p>Treaty 1 was signed in 1871 between the Canadian government and several First Nations.
+                <!--paragraph tag used to display content-->
+            <p tabindex="12">1 was signed in 1871 between the Canadian government and several First Nations.
                 It was negotiated at lower Fort-Garry in Manitoba, Canada.
                 The first seven nations that are involved in in treaty 1 are Peguis First nation, Sagkeeng first nation, long plain first nation, Roseau River Anishinaabe First Nation, Sandy Bay Ojibway First Nation and Swan Lake First Nation. 
                 Treaty 1, signed in 1871, promised the Anishinabek and Swampy Cree of southern Manitoba land, schools, and annual payments. 
                 The government promised each band 160 acres per family of five, or depending on the family's size, they also promised an annual annuity of $3 per person, or $15 per family of five.</p>
-                <p>Here is a Map of lower Fort-Garry where Treaty 1 was signed:</p>
+
+                <p tabindex="13">Here is a Map of lower Fort-Garry where Treaty 1 was signed:</p>
+                <!--iframe tag used to display and embed a google map of Lower-Fort Garry-->
                 <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.6631199146937!2d-96.93381279623162!3d50.11131224807684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1742065194829!5m2!1sen!2sca" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.6631199146937!2d-96.93381279623162!3d50.11131224807684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea60436a49462d%3A0x2dfd6b086e18dcf5!2sLower%20Fort%20Garry%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1742065194829!5m2!1sen!2sca" alt="Google map of Lower-Fort Garry" tabindex="14" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
             </div>
                 <!--Heading level 1-->
-                <h1>Additional commitments of Treaty 1</h1>
+                <h1 tabindex="15">commitments of Treaty 1</h1>
                 <!--Paragraph tag used to display content-->
-                <p>Additional commitments, known as "outside promises," were made but not initially included in the written treaty.
+                <p tabindex="16">Commitments, known as "outside promises," were made but not initially included in the written treaty.
                 These included providing chiefs with distinctive clothing, buggies, and farming supplies such as plows, oxen, and cows. 
                 These promises were formally recognized and integrated into the treaty in 1875.
                 through ongoing efforts to honor its promises, including recognizing Indigenous rights, engaging in meaningful consultations, and working towards reconciliation through initiatives like the Treaty One Nation's self-determination efforts and land reclamation.
                 </p>
+                <!--Break tag for line break-->
                 <br>
-                <h1>Differences between other treaties</h1>
-                <p> later treaties (e.g., Treaty 5 and Treaty 10), Treaty 1 did not explicitly outline hunting and fishing rights.
+                <!--Heading level 1-->
+                <h1 tabindex="17">Differences between other treaties</h1>
+                <!--paragraph tag used to display content-->
+                <p tabindex="18">Later treaties (e.g., Treaty 5 and Treaty 10), Treaty 1 did not explicitly outline hunting and fishing rights.
                 In contrast, later treaties included stronger guarantees for hunting, fishing, and trapping, allowing Indigenous communities to continue traditional livelihoods.
                 Treaty 1 was a foundational agreement but was less comprehensive than later treaties. The challenges and disputes that arose from it (such as the "outside promises" issue) influenced how future treaties were structured to be clearer and more beneficial for Indigenous peoples.
                 Its impact continues today, particularly in urban reserve development and economic initiatives.</p>
                 <!--Anchor tag used to direct users to all the sources used in the passage-->
-                <a href="sources.html">Click here to see the sources used in the passages Understanding Treaty 1 and Additional commitments of Treaty 1</a>
+                <a href="sources.html" tabindex="19">Click here to see the sources used in the passages Understanding Treaty 1 and Additional commitments of Treaty 1</a>
                 </section>
     </main>
     <!--Heading level 3-->
     <!--Footer for copyright information-->
-<footer>
+<footer tabindex="20">
     <p>&copy; 2025 Treaty 1 Website. All rights reserved.</p>
 </footer>
 </body>
