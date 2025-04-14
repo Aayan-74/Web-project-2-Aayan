@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<!--Always declare the document type as the first line in your document-->
+<!-- Declares the document type as HTML5, ensuring the browser interprets the document correctly. -->
 <html lang="en">
-    <!--You should always include the lang attribute inside the <html> tag, to declare the language of the Web page.​-->
-    <!--make sure that the HTML and body tags are in your webpage-->
+    <!-- The lang attribute specifies the language of the document's content, which helps search engines and screen readers. -->
 <head>
     <meta charset="UTF-8">
-    <!--You should include the <meta> element in all your web pages to give the browser instructions on how to control the page's dimensions and scaling.​-->
-    <!--To ensure proper interpretation and correct search engine indexing, the character encoding should be defined as early as possible in an HTML document.​-->
+    <!-- Specifies the character encoding for the document, ensuring proper display of special characters. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Sets the title shown in the browser tab.
-Defines the title displayed when the page is bookmarked.
-Appears as the page title in search engine results.-->
+    <!-- Ensures the page is responsive by setting the width to the device's width and scaling appropriately. -->
     <title>Sources</title>
-    <!--the style tag styles an HTML element in this case the anchor tag is being styled and the styles that are being applied to it are
-    font-size and padding which are properties-->
+    <!-- Sets the title of the webpage, which appears in the browser tab and search engine results. -->
     <style>
-        a {
-            font-size: large; padding: auto;
+        h1 {
+            color: white; /* Sets the text color of the heading to white. */
+            padding: auto; /* Adds automatic padding around the heading (though 'auto' is not valid for padding). */
         }
+        footer { position: fixed; bottom: 0; width: 100%; }
+        /* Styles the footer to be fixed at the bottom of the page, spanning the full width. */
     </style>
-    <link rel="stylesheet" href="styles.css"><!--Link to external CSS -->
+    <!-- Internal CSS to style the h1 element. -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links an external CSS file to style the webpage. -->
 </head>
-<!--all content is held by the body tag-->
 <body>
-    <!--Heading level 1-->
-
-    <h1 tabindex="1">Here are all the sources used for this website:</h1>
-    <!---->
-    <center><a href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html " tabindex="2"> government of Canada</a>
+    <!-- The body tag contains all the visible content of the webpage. -->
+    <header>
+        <!-- The header tag represents introductory content or navigational links. -->
+        <h1 tabindex="1">Here are all the sources used for this website:</h1>
+        <!-- The tabindex attribute makes the element focusable via keyboard navigation. -->
+        <nav class="navbar">
+            <!-- The nav tag defines a set of navigation links. -->
+            <ul class="nav-links">
+                <!-- The ul tag creates an unordered list, and the class 'nav-links' can be used for styling. -->
+                <li><a href="aboutus.html" tabindex="2">About us</a></li>
+                <!-- The a tag creates a hyperlink. The href attribute specifies the link's destination. -->
+                <li><a href="Contactus.html" tabindex="3">Contact us</a></li>
+                <li><a href="sources.html" tabindex="4">Resources</a></li>
+                <li><a href="index.html" tabindex="5">Home</a></li>
+                <!-- The tabindex attribute defines the tab order for keyboard navigation. -->
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <!-- The center tag centers the content horizontally on the page. -->
+        <a href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html" tabindex="6">
+            Government of Canada
+        </a>
+        <!-- The href attribute specifies the URL of the linked page. -->
+        <br/>
+        <!-- The br tag inserts a line break. -->
+        <br/>
+        <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028664/1581294165927" tabindex="7">
+            Government of Canada Treaties
+        </a>
         <br/>
         <br/>
-            <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028664/1581294165927 " tabindex="3"> Government of Canada Treaties</a>
-            <br/>
-            <br/>
-            <a href="https://www.treatyroad.ca/treaties-no-1-and-no-2#:~:text=The%20right%2Dof%2Dway%20treaty,to%20five%20dollars%20per%20year. " tabindex="4">Treaty 1</a>
-            <br/>
-            <br/>
-            <a href="Treaty 1 
+        <a href="https://www.treatyroad.ca/treaties-no-1-and-no-2#:~:text=The%20right%2Dof%2Dway%20treaty,to%20five%20dollars%20per%20year." tabindex="8">
+            Treaty 1
+        </a>
+        <br/>
+        <br/>
+        <a href="Treaty 1 
             Naawi-Oodena Officially Converted to Joint Reserve Lands ... - Treaty One 
-            December 18, 2022 — An historic step towards Economic Reconciliation December 19, 2022 – Winnipeg, MB – To conclude negotiations spanning the course of two decades, lands of the former Kapyong Barracks in Winnipeg, MB, were officially converted to reserve and repatriated to the Joint Reserve land base of the seven Treaty One First Nations on December 16, 2022. Currently the largest First Nation-led Urban ... "
-            tabindex="5">Treaty 1 website</a>
-            <br/>
-            <br/>
-        <a href="https://scoinc.mb.ca/treaties/" tabindex="6">Southern Chiefs Organization INC. This is also the image source of the map of Manitoba</a></center>
+            December 18, 2022 — An historic step towards Economic Reconciliation December 19, 2022 – Winnipeg, MB – To conclude negotiations spanning the course of two decades, lands of the former Kapyong Barracks in Winnipeg, MB, were officially converted to reserve and repatriated to the Joint Reserve land base of the seven Treaty One First Nations on December 16, 2022. Currently the largest First Nation-led Urban ..." tabindex="9">
+            Treaty 1 website
+        </a>
+        <br/>
+        <br/>
+        <a href="https://scoinc.mb.ca/treaties/" tabindex="10">
+            Southern Chiefs Organization INC. This is also the image source of the map of Manitoba
+        </a>
+    </center>
+    <footer>
+        <!-- The footer tag represents the footer of the document or section. -->
+        <p tabindex="11" style="color: white;">&copy; 2023 Treaty 1. All rights reserved.</p>
+        <!-- The p tag defines a paragraph of text. The &copy; entity represents the copyright symbol. -->
+        <!-- The style attribute sets the text color to white. -->
+    </footer>
 </body>
 </html>

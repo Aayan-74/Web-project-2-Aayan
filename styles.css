@@ -1,145 +1,205 @@
 /* General Styles */
+/* The body element is styled to remove default margins, set a sans-serif font, and apply a beige background color. */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Removes default margin around the body. */
+    font-family: Arial, sans-serif; /* Sets the font to Arial or a fallback sans-serif font. */
+    padding: 0; /* Removes default padding. */
+    text-align: center; /* Centers text horizontally. */
+    background-color: beige; /* Sets the background color to beige. */
 }
-h1 {
-    padding: auto; text-align: center;
-}
-p {
-    padding: auto; text-align:center; font-size: larger;
-}
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #004225;
-    padding: 15px 20px;
-    color: white;
-}
-/* to puta logo for the website*/
 
+/* The h1 element is centered horizontally with padding set to auto. */
+h1 {
+    padding: auto; /* Centers the padding automatically. */
+    text-align: center; /* Aligns the text to the center. */
+}
+
+/* The p element is styled for larger font size and centered text. */
+p {
+    padding: auto; /* Centers the padding automatically. */
+    text-align: center; /* Aligns the text to the center. */
+    font-size: larger; /* Increases the font size. */
+}
+
+/* Navbar Styles */
+/* The navbar is a flex container with space between items, vertically centered, and styled with a green background and white text. */
+.navbar {
+    display: flex; /* Enables flexbox layout for child elements. */
+    justify-content: space-between; /* Distributes space between child elements. */
+    align-items: center; /* Vertically centers child elements. */
+    background-color: #004225; /* Sets the background color to dark green. */
+    padding: 15px 20px; /* Adds padding inside the navbar. */
+    color: white; /* Sets the text color to white. */
+}
 
 /* Navigation Links */
+/* The navigation links are displayed as a horizontal list with spacing between items. */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Removes default bullet points from the list. */
+    display: flex; /* Displays list items in a row. */
+    gap: 20px; /* Adds space between list items. */
+    padding: 0; /* Removes default padding. */
+    margin: 0; /* Removes default margin. */
 }
 
+/* Individual list items are displayed inline. */
 .nav-links li {
-    display: inline;
+    display: inline; /* Ensures list items are displayed inline. */
 }
 
+/* Links inside the navbar are styled with white text and no underline. */
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+    color: white; /* Sets the text color to white. */
+    text-decoration: none; /* Removes the underline from links. */
+    font-size: 1.2em; /* Increases the font size slightly. */
 }
 
+/* Adds an underline effect when hovering over links. */
 .nav-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underlines the text on hover. */
 }
 
 /* Mobile Menu Button */
+/* The menu toggle button is hidden by default and styled for larger font size and cursor pointer. */
 .menu-toggle {
-    display: none;
-    font-size: 2em;
-    cursor: pointer;
+    display: none; /* Hides the button by default. */
+    font-size: 2em; /* Sets the font size to 2em. */
+    cursor: pointer; /* Changes the cursor to a pointer on hover. */
 }
 
 /* Responsive Navbar */
+/* Styles for screens with a maximum width of 768px. */
 @media (max-width: 768px) {
+    /* The navigation links are hidden and displayed as a vertical column when active. */
     .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #004225;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px;
+        display: none; /* Hides the navigation links by default. */
+        flex-direction: column; /* Stacks links vertically. */
+        background-color: #004225; /* Sets the background color to dark green. */
+        position: absolute; /* Positions the links relative to the viewport. */
+        top: 60px; /* Positions the links below the navbar. */
+        left: 0; /* Aligns the links to the left edge. */
+        width: 100%; /* Makes the links span the full width. */
+        padding: 10px; /* Adds padding inside the links container. */
     }
 
+    /* Displays the navigation links when the active class is added. */
     .nav-links.active {
-        display: flex;
+        display: flex; /* Displays the links as a flex container. */
     }
 
+    /* The menu toggle button is displayed on smaller screens. */
     .menu-toggle {
-        display: block;
+        display: block; /* Makes the button visible. */
     }
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: beige
 }
 
 /* Header */
+/* The header is styled with a dark green background and black text. */
 header {
-    background: #004225;
-    color: black;
-    padding: 10px;
+    background: #004225; /* Sets the background color to dark green. */
+    color: black; /* Sets the text color to black. */
+    padding: 10px; /* Adds padding inside the header. */
 }
 
 /* Sections */
+/* Sections are styled with a white background, rounded corners, and a shadow effect. */
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limits the width of the section. */
+    margin: 20px auto; /* Centers the section horizontally and adds vertical spacing. */
+    padding: 20px; /* Adds padding inside the section. */
+    background: white; /* Sets the background color to white. */
+    border-radius: 5px; /* Rounds the corners of the section. */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect. */
 }
 
 /* Lists */
+/* Unordered lists have no bullet points and are styled with green backgrounds and rounded corners. */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Removes bullet points. */
+    padding: 0; /* Removes default padding. */
 }
 
 ul li {
-    background: green;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: green; /* Sets the background color to green. */
+    margin: 5px 0; /* Adds vertical spacing between list items. */
+    padding: 10px; /* Adds padding inside each list item. */
+    border-radius: 5px; /* Rounds the corners of each list item. */
 }
 
 /* Footer */
+/* The footer is styled with a dark green background and white text. */
 footer {
-    background: #004225;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-.text-image-container {
-    display: flex;
-    align-items: center; /* Aligns text and image vertically */
-    gap: 20px; /* Adds space between text and image */
+    background: #004225; /* Sets the background color to dark green. */
+    color: white; /* Sets the text color to white. */
+    padding: 10px; /* Adds padding inside the footer. */
+    margin-top: 20px; /* Adds spacing above the footer. */
 }
 
+/* Text and Image Container */
+/* A container that aligns text and images horizontally with spacing. */
+.text-image-container {
+    display: flex; /* Displays content in a row. */
+    align-items: center; /* Aligns items vertically. */
+    gap: 20px; /* Adds space between text and image. */
+}
+
+/* Side Image */
+/* Styles for images placed on the side of text. */
 .side-image {
-    width: 200px; /* Adjust size */
-    height: auto;
-    border-radius: 5px; /* Optional styling */
+    width: 200px; /* Sets the width of the image. */
+    height: auto; /* Maintains the aspect ratio of the image. */
+    border-radius: 5px; /* Rounds the corners of the image. */
+    float: left; /* Aligns the image to the left of the text. */
+    margin-right: 15px; /* Adds spacing to the right of the image. */
+    width: 350px; /* Adjusts the width of the image. */
 }
-.side-image {
-    float: left;
-    margin-right: 15px;
-    width: 350px; /* Adjust as needed */
-    height: auto;
-}
-#about us heading { 
-    border: 20px solid white; /* Adds a black border */
-    padding: 10px; /* Adds space inside the border */
-}
+
+/* Highlighted Text */
+/* Styles for text that needs to be emphasized. */
 .highlight {
-    color: red; /* Changes the text color to red */
-    font-weight: bold; /* Makes the text bold */
+    color: red; /* Changes the text color to red. */
+    font-weight: bold; /* Makes the text bold. */
+}
+
+/* Form */
+/* The form is centered and styled with column layout and spacing. */
+form {
+    display: flex; /* Enables flexbox layout. */
+    flex-direction: column; /* Stacks form elements vertically. */
+    align-items: center; /* Centers form elements horizontally. */
+    margin-top: 20px; /* Adds spacing above the form. */
+}
+
+/* Input Fields */
+/* Input fields are styled with padding, rounded corners, and a border. */
+input {
+    padding: 10px; /* Adds padding inside the input field. */
+    margin: 5px; /* Adds spacing around the input field. */
+    border: 1px solid black; /* Adds a black border. */
+    border-radius: 10px; /* Rounds the corners of the input field. */
+    width: 80%; /* Sets the width to 80% of the container. */
+    max-width: 400px; /* Limits the maximum width of the input field. */
+}
+
+/* Buttons */
+/* Buttons are styled with padding, rounded corners, and a green background. */
+button {
+    padding: 10px 20px; /* Adds padding inside the button. */
+    background-color: #004225; /* Sets the background color to dark green. */
+    color: white; /* Sets the text color to white. */
+    border: none; /* Removes the border. */
+    border-radius: 5px; /* Rounds the corners of the button. */
+    cursor: pointer; /* Changes the cursor to a pointer on hover. */
+}
+
+/* Button Hover */
+/* Changes the background color of the button when hovered. */
+button:hover {
+    background-color: #003314; /* Darkens the background color on hover. */
+}
+
+/* Link Hover */
+/* Adds an underline effect to links when hovered. */
+a:hover {
+    text-decoration: underline; /* Underlines the text on hover. */
 }
