@@ -1,12 +1,21 @@
-/*I chose a beige and green color scheme for my website because beige gives off a clean, simplistic look, while green gives off a bold, yet calm and balanced look. Green contrasts with the beige well making it stand out. I also chose this color scheme because it gives off a calm, relaxed feeling. Green is my primary color and beige is my accent color. This color scheme would be a split analogous color scheme where there are 2 similar colors, in this case beige and white, and my primary color is green to give contrast against the white and beige which are neutral colors.*/
+/*I chose a monochromatic color scheme with the color green.
+The color green is often associated with nature, growth, and harmony.
+It is a calming color that can evoke feelings of tranquility and balance.
+I chose this color scheme because it is visually appealing and can create a sense of peace and relaxation for the users.
+Indigenous people often have a deep connection to nature, and the color green can represent that connection.
+The color green is also associated with healing and renewal, which can be relevant to the themes of Indigenous culture and history.
+I also chose the color white for my neutral color because it represents purity and simplicity.
+The color white can create a clean and fresh look, which can help to highlight the content of the website.
+The grade level I chose for this website is Grade 4-8*/
+
 /* General Styles */
 /* The body element is styled to remove default margins, set a sans-serif font, and apply a beige background color. */
 body {
     margin: 0; /* Removes default margin around the body. */
-    font-family: Arial, sans-serif; /* Sets the font to Arial or a fallback sans-serif font. */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to Arial or a fallback sans-serif font. */
     padding: 0; /* Removes default padding. */
     text-align: center; /* Centers text horizontally. */
-    background-color: beige; /* Sets the background color to beige. */
+    background-color: rgb(183, 229, 131); /* Sets the background color to a light green. */
 }
 
 /* The h1 element is centered horizontally with padding set to auto. */
@@ -100,6 +109,8 @@ header {
     background: #004225; /* Sets the background color to dark green. */
     color: black; /* Sets the text color to black. */
     padding: 10px; /* Adds padding inside the header. */
+    margin-bottom: 20px; /* Adds spacing below the header. */
+    width: 100%; /* Makes the header span the full width. */
 }
 
 /* Sections */
