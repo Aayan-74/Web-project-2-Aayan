@@ -40,6 +40,7 @@ p {
     background-color: #004225; /* Sets the background color to dark green. */
     padding: 15px 20px; /* Adds padding inside the navbar. */
     color: white; /* Sets the text color to white. */
+    justify-content: center; /* Centers the navbar items. */
 }
 
 /* Navigation Links */
@@ -50,6 +51,7 @@ p {
     gap: 20px; /* Adds space between list items. */
     padding: 0; /* Removes default padding. */
     margin: 0; /* Removes default margin. */
+    letter-spacing: 1px; /* Adds space between letters. */
 }
 
 /* Individual list items are displayed inline. */
