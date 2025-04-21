@@ -77,5 +77,21 @@
     <footer tabindex="18">
         <p>&copy; 2025 Treaty 1 Website. All rights reserved.</p>
     </footer>
+    
+    <button onclick="scrollToTop()" id="topButton">Back to top</button>
+    <!-- The button tag creates a clickable button. The onclick attribute calls the scrollToTop function when clicked. -->
+    <script>window.onscroll = function() {
+        let button = document.getElementById("topButton");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = "block";
+        } else {
+        button.style.display = "none";
+        }
+    };
+      // Scroll to top when clicked
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
 </body>
 </html>

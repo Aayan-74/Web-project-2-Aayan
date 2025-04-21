@@ -39,6 +39,8 @@ Date Last Modified: 2025/03/17-->
         /* Adds spacing between letters for links */
         footer { width: 100%;}
         figcaption { font-size: large;}
+        p {text-height: 1.5em;}
+        /* Sets the height of text lines to 1.5 times the font size for better readability */
     </style>
     <!-- Inline CSS styles for specific elements to enhance their appearance -->
 </head>
@@ -79,9 +81,7 @@ Date Last Modified: 2025/03/17-->
         <!-- Section centered on the page, containing the main topic -->
         <h1 tabindex="6">What are Treaties and why do we use them?</h1>
         <!-- Heading introducing the topic of treaties -->
-    </section>
 
-    <section class="center-content">
         <!-- Section centered on the page, providing an explanation of treaties -->
             <!-- Container for text and image content -->
             <p tabindex="7">
@@ -191,5 +191,21 @@ Date Last Modified: 2025/03/17-->
     <!-- Footer section containing copyright information -->
     <p tabindex="29">&copy; 2025 Treaty 1 Website. All rights reserved.</p>
 </footer>
+<button onclick="scrollToTop()" id="topButton">Back to top</button>
+
+<script>window.onscroll = function() {
+    let button = document.getElementById("topButton");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    button.style.display = "block";
+    } else {
+    button.style.display = "none";
+    }
+};
+  // Scroll to top when clicked
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+<!-- JavaScript function to handle the scroll-to-top button functionality -->
 </body>
 </html>
