@@ -233,5 +233,6 @@ a:hover {
     z-index: 1000;
 }
 #topButton:hover {
-    background-color: #2980b9;
+    background-color:rgb(1, 77, 1); /* Darkens the background color on hover. */
+    color: white; /* Sets the text color to white. */
 }
