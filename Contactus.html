@@ -12,6 +12,12 @@
     <!-- Sets the title of the webpage, which appears in the browser tab and search engine results. -->
     <link rel="stylesheet" href="styles.css">
     <!-- Links an external CSS file to style the webpage. -->
+    <style>
+        body { line-height: 1.6em;
+        letter-spacing: 1px;}
+        /* The <style> tag contains internal CSS to style the webpage. 
+            The "line-height" property sets the space between lines of text, and "letter-spacing" adjusts the space between characters. */
+    </style>
 </head>
 <body>
     <!-- The <body> tag contains all the visible content of the webpage. -->
@@ -109,7 +115,7 @@
         <!-- Displays copyright information. 
             The "&copy;" entity represents the copyright symbol. -->
     </footer>
-    <button onclick="scrollToTop()" id="topButton">Back to top</button>
+    <button onclick="scrollToTop()" id="topButton" tabindex="21">Back to top</button>
     <script>window.onscroll = function() {
         let button = document.getElementById("topButton");
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

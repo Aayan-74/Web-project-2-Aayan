@@ -39,7 +39,8 @@ Date Last Modified: 2025/03/17-->
         /* Adds spacing between letters for links */
         footer { width: 100%;}
         figcaption { font-size: large;}
-        p {text-height: 1.5em;}
+        /*Sets the font size of figure captions to large for better visibility*/
+        p {line-height: 1.5em;}
         /* Sets the height of text lines to 1.5 times the font size for better readability */
     </style>
     <!-- Inline CSS styles for specific elements to enhance their appearance -->
@@ -191,7 +192,8 @@ Date Last Modified: 2025/03/17-->
     <!-- Footer section containing copyright information -->
     <p tabindex="29">&copy; 2025 Treaty 1 Website. All rights reserved.</p>
 </footer>
-<button onclick="scrollToTop()" id="topButton">Back to top</button>
+<button onclick="scrollToTop()" id="topButton" tabindex="30">Back to top</button>
+<!--Creates the back to top button and when someone clicks it it will run the command scrollToTop-->
 
 <script>window.onscroll = function() {
     let button = document.getElementById("topButton");
@@ -206,6 +208,14 @@ function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 </script>
-<!-- JavaScript function to handle the scroll-to-top button functionality -->
+<!-- JavaScript function to handle the scroll-to-top button functionality like displaying or hiding it when scrolling.
+
+window,onscroll means "when the person scrolls the page..."Inside the function, it checks how far the person has scrolled down.
+
+document.body.scrollTop and document.documentElement.scrollTop are both ways to find how far down the page you are.
+
+If you scrolled down more than 200 pixels, it shows the button (display: block).
+
+If you’re near the top (less than 200 pixels), it hides the button (display: none).-->
 </body>
 </html>

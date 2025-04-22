@@ -218,19 +218,21 @@ a:hover {
     text-decoration: underline; /* Underlines the text on hover. */
 }
 
+/* Back to Top Button */
+/* The #topButton is styled as a fixed-position button that appears at the bottom-right corner of the screen. */
 #topButton {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(45, 144, 45);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    z-index: 1000;
+    position: fixed; /* Fixes the button's position relative to the viewport. */
+    bottom: 40px; /* Positions the button 40px from the bottom of the viewport. */
+    right: 40px; /* Positions the button 40px from the right of the viewport. */
+    padding: 10px 20px; /* Adds padding inside the button for a larger clickable area. */
+    font-size: 16px; /* Sets the font size of the button text. */
+    background-color: rgb(45, 144, 45); /* Sets the background color to a medium green. */
+    color: white; /* Sets the text color to white. */
+    border: none; /* Removes the border around the button. */
+    border-radius: 8px; /* Rounds the corners of the button. */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button. */
+    display: none; /* Hides the button by default. */
+    z-index: 1000; /* Ensures the button appears above other elements. */
 }
 #topButton:hover {
     background-color:rgb(1, 77, 1); /* Darkens the background color on hover. */
